@@ -16,9 +16,7 @@ public class Program {
 
         try{
             conn = DB.getConnection();
-
             st = conn.createStatement();        //instancia o objeto do tipo statement
-
             rs = st.executeQuery("select * from department"); //função permite chamar um sql
 
             while (rs.next()){
